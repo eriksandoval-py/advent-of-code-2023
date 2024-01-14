@@ -21,7 +21,7 @@ public class Part1 {
                     lastDigit = matcher.group();
                 }
                 if (firstDigit != null) {
-                    String digit = firstDigit + (lastDigit != null ? lastDigit : firstDigit);
+                    String digit = firstDigit + lastDigit;
                     sum += Long.parseLong(digit);
                 }
             }
